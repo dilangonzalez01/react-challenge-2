@@ -1,0 +1,104 @@
+/* Estilos globales y fondo de la página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0;
+}
+
+/* Contenedor principal de la app como una "Tarjeta" */
+#root > div {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #334155;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #64748b;
+}
+
+/* Formulario e inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+/* Botón azul principal (Agregar) */
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Lista de contactos */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Botón rojo (Eliminar) */
+li button {
+  background-color: #ef4444;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+li button:hover {
+  background-color: #dc2626;
+}
